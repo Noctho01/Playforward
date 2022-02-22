@@ -1,0 +1,442 @@
+{
+    "usuarios": {
+        "Anunciantes": {
+            "seeds" : [
+                {
+                    "nome": "Mateus Da Silva Melo",
+                    "cpf": "01234658497",
+                    "email": "mateus.silva@hotmail.com",
+                    "senha": "senhaMateus",
+                    "numero_telefone": "15484563258",
+                    "data_nascimento": "1995-01-01",
+                    "endereco": "this.pais + ', ' + this.estado + ', ' + this.cidade + ' - ' + this.complemento",
+                    "cep": "154832588",
+                    "pais": "Brasil",
+                    "estado": "Bahia",
+                    "cidade": "Porto Seguro",
+                    "complemento": "Complemento de onde moro",
+                    "carteira_virtual": "123456789",
+                    "createdAt": "new Date()",
+                    "updatedAt": "new Date()"
+                },{
+                    "nome": "Marcela Da Silva",
+                    "cpf": "21346578942",
+                    "email": "marcela.silva@hotmail.com",
+                    "senha": "minhaSenha",
+                    "numero_telefone": "12345678912",
+                    "data_nascimento": "2001-10-01",
+                    "endereco": "this.pais + ', ' + this.estado + ', ' + this.cidade + ' - ' + this.complemento",
+                    "cep": "78945612",
+                    "pais": "Argentina",
+                    "estado": "Misiones",
+                    "cidade": "San Ignacio",
+                    "complemento": "Complemento de onde moro",
+                    "carteira_virtual": "789456126",
+                    "createdAt": "new Date()",
+                    "updatedAt": "new Date()"
+                },{
+                    "nome": "Fabiana De Albuquerque",
+                    "cpf": "12456789123",
+                    "email": "albuquerquef@outlook.com",
+                    "senha": "senha123",
+                    "numero_telefone": "78541236985",
+                    "data_nascimento": "1999-09-06",
+                    "endereco": "this.pais + ', ' + this.estado + ', ' + this.cidade + ' - ' + this.complemento",
+                    "cep": "12385274",
+                    "pais": "Brasil",
+                    "estado": "Minas Gerais",
+                    "cidade": "Ouro Preto",
+                    "complemento": "Complemento de onde moro",
+                    "carteira_virtual": "852963741",
+                    "createdAt": "new Date()",
+                    "updatedAt": "new Date()"
+                },{
+                    "nome": "Thiago dos Santos",
+                    "cpf": "25875335795",
+                    "email": "thithia@gmail.com",
+                    "senha": "thi321",
+                    "numero_telefone": "74174196385",
+                    "data_nascimento": "2005-07-25",
+                    "endereco": "this.pais + ', ' + this.estado + ', ' + this.cidade + ' - ' + this.complemento",
+                    "cep": "78521465",
+                    "pais": "Brasil",
+                    "estado": "Minas Gerais",
+                    "cidade": "Juiz de Fora",
+                    "complemento": "Complemento de onde moro",
+                    "carteira_virtual": "874512369",
+                    "createdAt": "new Date()",
+                    "updatedAt": "new Date()"
+                }
+            ]
+        },
+        "Clientes": {
+            "seeds" : [
+                {
+                    "nome": "Gabriel dos Santos Cesario",
+                    "cpf": "15915935735",
+                    "email": "bielSantos@hotmail.com",
+                    "senha": "123456",
+                    "numero_telefone": "96385274589",
+                    "data_nascimento": "2002-10-12",
+                    "endereco": "this.pais + ', ' + this.estado + ', ' + this.cidade + ' - ' + this.complemento",
+                    "cep": "154832588",
+                    "pais": "Brasil",
+                    "estado": "Bahia",
+                    "cidade": "Porto Seguro",
+                    "complemento": "Complemento de onde moro",
+                    "createdAt": "new Date()",
+                    "updatedAt": "new Date()"
+                },{
+                    "nome": "Gustavo dos Santos Correira",
+                    "cpf": "92168866090",
+                    "email": "mateus.silva@hotmail.com",
+                    "senha": "senhaMateus",
+                    "numero_telefone": "53987061541",
+                    "data_nascimento": "1995-01-01",
+                    "endereco": "this.pais + ', ' + this.estado + ', ' + this.cidade + ' - ' + this.complemento",
+                    "cep": "154832588",
+                    "pais": "Brasil",
+                    "estado": "Bahia",
+                    "cidade": "Porto Seguro",
+                    "complemento": "Complemento de onde moro",
+                    "createdAt": "new Date()",
+                    "updatedAt": "new Date()"
+                },{
+                    "nome": "Miuos Cois Deser",
+                    "cpf": "79064171009",
+                    "email": "miuco@gmail.com",
+                    "senha": "963258",
+                    "numero_telefone": "97999274853",
+                    "data_nascimento": "1992-12-12",
+                    "endereco": "this.pais + ', ' + this.estado + ', ' + this.cidade + ' - ' + this.complemento",
+                    "cep": "29102627",
+                    "pais": "Brasil",
+                    "estado": "Distrito Federal",
+                    "cidade": "Ceilandia",
+                    "complemento": "Complemento de onde moro",
+                    "createdAt": "new Date()",
+                    "updatedAt": "new Date()"
+                }
+            ]
+        }
+    },
+    "modelos_associativos": [
+        {
+            "migrate": "npx sequelize-cli model:create --name Produtos --attributes nome:string,descricao:text,preco:float,estoque:integer",
+            "seeds": [
+                {
+                    "nome": "Resident Evil Village",
+                    "classificacao_id": 6,
+                    "descricao": "Resident Evil: Village, conhecido no Japão como Biohazard: Village é um jogo eletrônico de survival horror desenvolvido e publicado pela Capcom. É a sequência de Resident Evil 7: Biohazard, de 2017, e foi anunciado pela primeira vez no evento de revelação do PlayStation 5 em 11 de junho de 2020",
+                    "plataforma_id": 2,
+                    "preco": 120.00,
+                    "estoque": 3,
+                    "createdAt": "new Date()",
+                    "updatedAt": "new Date()"
+                },{
+                    "nome": "Far Cry 6",
+                    "classificacao_id": 6,
+                    "plataforma_id": 1,
+                    "descricao": "Far Cry 6 é um jogo eletrônico de tiro em primeira pessoa desenvolvido pela Ubisoft Toronto e publicado pela Ubisoft. É o sexto título principal da série Far Cry e foi lançado em 7 de outubro de 2021 para Amazon Luna, Google Stadia, Microsoft Windows, PlayStation 4, PlayStation 5, Xbox One e Xbox Series X/S.",
+                    "preco": 150.00,
+                    "estoque": 1,
+                    "createdAt": "new Date()",
+                    "updatedAt": "new Date()"
+                },{
+                    "nome": "Forza Horizon 5",
+                    "classificacao_id": 3,
+                    "plataforma_id": 3,
+                    "descricao": "Forza Horizon 5 é um jogo eletrônico de corrida desenvolvido pela Playground Games e publicado pela Xbox Game Studios. É o quinto jogo da série Forza Horizon e o décimo segundo título principal da franquia Forza. O jogo se passa em uma representação ficcional do México",
+                    "preco": 55.90,
+                    "estoque": 6,
+                    "createdAt": "new Date()",
+                    "updatedAt": "new Date()"
+                },{
+                    "nome": "Deathloop",
+                    "classificacao_id": 5,
+                    "plataforma_id": 3,
+                    "descricao": "Deathloop é um jogo eletrônico de tiro em primeira pessoa desenvolvido pela Arkane Studios e publicado pela Bethesda Softworks. Foi lançado para Microsoft Windows e PlayStation 5 — como um exclusivo de console temporário — em setembro de 2021.",
+                    "preco": 280.99,
+                    "estoque": 4,
+                    "createdAt": "new Date()",
+                    "updatedAt": "new Date()"
+                },{
+                    "nome": "Halo Infinite",
+                    "classificacao_id": 4,
+                    "plataforma_id": 3,
+                    "descricao": "Halo Infinite é um jogo eletrônico de tiro em primeira pessoa desenvolvido pela 343 Industries e publicado pela Xbox Game Studios. Foi lançado em 8 de dezembro de 2021 para Microsoft Windows, Xbox",
+                    "preco": 234.99,
+                    "estoque": 3,
+                    "createdAt": "new Date()",
+                    "updatedAt": "new Date()"
+                },{
+                    "nome": "Battlefield 2042",
+                    "classificacao_id": 6,
+                    "plataforma_id": 2,
+                    "descricao": "Battlefield 2042 é um jogo eletrônico de tiro em primeira pessoa desenvolvido pela DICE e publicado pela Electronic Arts. É o décimo sétimo título da série Battlefield e a sequência de Battlefield V, de 2018",
+                    "preco": 289.99,
+                    "estoque": 3,
+                    "createdAt": "new Date()",
+                    "updatedAt": "new Date()"
+                },{
+                    "nome": "Battlefield 2042",
+                    "classificacao_id": 6,
+                    "plataforma_id": 1,
+                    "descricao": "Battlefield 2042 é um jogo eletrônico de tiro em primeira pessoa desenvolvido pela DICE e publicado pela Electronic Arts. É o décimo sétimo título da série Battlefield e a sequência de Battlefield V, de 2018",
+                    "preco": 280.99,
+                    "estoque": 2,
+                    "createdAt": "new Date()",
+                    "updatedAt": "new Date()"
+                },{
+                    "nome": "Forza Horizon 5",
+                    "classificacao_id": 3,
+                    "plataforma_id": 8,
+                    "descricao": "Forza Horizon 5 é um jogo eletrônico de corrida desenvolvido pela Playground Games e publicado pela Xbox Game Studios. É o quinto jogo da série Forza Horizon e o décimo segundo título principal da franquia Forza. O jogo se passa em uma representação ficcional do México",
+                    "preco": 60.00,
+                    "estoque": 3,
+                    "createdAt": "new Date()",
+                    "updatedAt": "new Date()"
+                }
+            ]
+        },
+        {
+            "migrate": "npx sequelize-cli model:creeate --name ClientesProdutosAnunciantes --attributtes quantidade:integer",
+            "seeds" : []
+        },
+        {
+            "migrate": "npx sequelize-cli model:create --name ProdutosDeAnunciantes",
+            "seeds" : []
+        },
+        {
+            "migrate": "npx sequelize-cli model:create --name CarrinhosClientes --attributes quantidade:integer",
+            "seeds" : []
+        },
+        {
+            "migrate": "npx sequelize-cli model:create --name GenerosProdutos",
+            "seeds": [
+                {
+                    "produto_id": 2,
+                    "genero_id": 1,
+                    "createdAt": new Date(),
+                    "updatedAt": new Date()
+                },{
+                    "produto_id": 2,
+                    "genero_id": 2,
+                    "createdAt": new Date(),
+                    "updatedAt": new Date()
+                },{
+                    "produto_id": 2,
+                    "genero_id": 3,
+                    "createdAt": new Date(),
+                    "updatedAt": new Date()
+                },{
+                    "produto_id": 2,
+                    "genero_id": 13,
+                    "createdAt": new Date(),
+                    "updatedAt": new Date()
+                }
+            ]
+        }
+    ],
+    "modelos_rerefenciados": [
+        {
+            "migrate": "npx sequelize-cli model:create --name Generos --attributes genero:string",
+            "seeds" : [
+                {
+                    "genero": "AÇÃO",
+                    "createdAt": "new Date()",
+                    "updatedAt": "new Date()"
+                },{
+                    "genero": "AVENTURA",
+                    "createdAt": "new Date()",
+                    "updatedAt": "new Date()"
+                },{
+                    "genero": "TIRO",
+                    "createdAt": "new Date()",
+                    "updatedAt": "new Date()"
+                },{
+                    "genero": "ESPORTE",
+                    "createdAt": "new Date()",
+                    "updatedAt": "new Date()"
+                },{
+                    "genero": "SIMULAÇÃO",
+                    "createdAt": "new Date()",
+                    "updatedAt": "new Date()"
+                },{
+                    "genero": "SANDBOX",
+                    "createdAt": "new Date()",
+                    "updatedAt": "new Date()"
+                },{
+                    "genero": "CASUAL",
+                    "createdAt": "new Date()",
+                    "updatedAt": "new Date()"
+                },{
+                    "genero": "LUTA",
+                    "createdAt": "new Date()",
+                    "updatedAt": "new Date()"
+                },{
+                    "genero": "RPG",
+                    "createdAt": "new Date()",
+                    "updatedAt": "new Date()"
+                },{
+                    "genero": "MMORPG",
+                    "createdAt": "new Date()",
+                    "updatedAt": "new Date()"
+                },{
+                    "genero": "PLATAFORMA",
+                    "createdAt": "new Date()",
+                    "updatedAt": "new Date()"
+                },{
+                    "genero": "TERROR",
+                    "createdAt": "new Date()",
+                    "updatedAt": "new Date()"
+                },{
+                    "genero": "SOBREVIVENCIA",
+                    "createdAt": "new Date()",
+                    "updatedAt": "new Date()"
+                },{
+                    "genero": "DRAMA",
+                    "createdAt": "new Date()",
+                    "updatedAt": "new Date()"
+                },{
+                    "genero": "ESTRATEGIA",
+                    "createdAt": "new Date()",
+                    "updatedAt": "new Date()"
+                },{
+                    "genero": "CORRIDA",
+                    "createdAt": "new Date()",
+                    "updatedAt": "new Date()"
+                },{
+                    "genero": "MOBA",
+                    "createdAt": "new Date()",
+                    "updatedAt": "new Date()"
+                }
+            ]
+        },
+        {
+            "migrate": "npx sequelize-cli model:create --name Classificacoes --attributes classificacao:string,descricao:string",
+            "seeds" : [
+                {
+                    "classificacao": "RP",
+                    "descrição": "Classificação pendente",
+                    "createdAt": "new Date()",
+                    "updatedAt": "new Date()"
+                },
+                {
+                    "classificacao": "EC",
+                    "descrição": "Primeira Infância",
+                    "createdAt": "new Date()",
+                    "updatedAt": "new Date()"
+                },
+                {
+                    "classificacao": "E",
+                    "descrição": "Todos",
+                    "createdAt": "new Date()",
+                    "updatedAt": "new Date()"
+                },
+                {
+                    "classificacao": "E 10+",
+                    "descrição": "Todos com mais de 10 anos",
+                    "createdAt": "new Date()",
+                    "updatedAt": "new Date()"
+                },
+                {
+                    "classificacao": "T",
+                    "descrição": "Adolescente",
+                    "createdAt": "new Date()",
+                    "updatedAt": "new Date()"
+                },
+                {
+                    "classificacao": "M",
+                    "descrição": "Maduro",
+                    "createdAt": "new Date()",
+                    "updatedAt": "new Date()"
+                },
+                {
+                    "classificacao": "A",
+                    "descrição": "Adulto",
+                    "createdAt": "new Date()",
+                    "updatedAt": "new Date()"
+                }
+            ]
+        },
+        {
+            "migrate": "npx sequelize-cli model:create --name Plataformas --attributes plataforma:string",
+            "seeds": [
+                {
+                    "plataforma": "Pc",
+                    "createdAt": "new Date()",
+                    "updatedAt": "new Date()"
+                },{
+                    "plataforma": "PlayStation 5",
+                    "createdAt": "new Date()",
+                    "updatedAt": "new Date()"
+                },{
+                    "plataforma": "Xbox Series X/S",
+                    "createdAt": "new Date()",
+                    "updatedAt": "new Date()"
+                },{
+                    "plataforma": "Nintendo 3DS",
+                    "createdAt": "new Date()",
+                    "updatedAt": "new Date()"
+                },{
+                    "plataforma": "PlayStation Vita",
+                    "createdAt": "new Date()",
+                    "updatedAt": "new Date()"
+                },{
+                    "plataforma": "Nintendo Wii U",
+                    "createdAt": "new Date()",
+                    "updatedAt": "new Date()"
+                },{
+                    "plataforma": "PlayStation 4",
+                    "createdAt": "new Date()",
+                    "updatedAt": "new Date()"
+                },{
+                    "plataforma": "Xbox One",
+                    "createdAt": "new Date()",
+                    "updatedAt": "new Date()"
+                },{
+                    "plataforma": "Nintendo Switch",
+                    "createdAt": "new Date()",
+                    "updatedAt": "new Date()"
+                },{
+                    "plataforma": "Nintendo Ds",
+                    "createdAt": "new Date()",
+                    "updatedAt": "new Date()"
+                },{
+                    "plataforma": "Psp",
+                    "createdAt": "new Date()",
+                    "updatedAt": "new Date()"
+                },{
+                    "plataforma": "Xbox 360",
+                    "createdAt": "new Date()",
+                    "updatedAt": "new Date()"
+                },{
+                    "plataforma": "PlayStation 3",
+                    "createdAt": "new Date()",
+                    "updatedAt": "new Date()"
+                },{
+                    "plataforma": "Wii",
+                    "createdAt": "new Date()",
+                    "updatedAt": "new Date()"
+                },{
+                    "plataforma": "PlayStation 2",
+                    "createdAt": "new Date()",
+                    "updatedAt": "new Date()"
+                },{
+                    "plataforma": "Game Boy Advance",
+                    "createdAt": "new Date()",
+                    "updatedAt": "new Date()"
+                },{
+                    "plataforma": "Xbox",
+                    "createdAt": "new Date()",
+                    "updatedAt": "new Date()"
+                },{
+                    "plataforma": "Nintendo GameCube",
+                    "createdAt": "new Date()",
+                    "updatedAt": "new Date()"
+                }
+            ]
+        }
+    ]
+}

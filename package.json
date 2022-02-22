@@ -1,0 +1,46 @@
+{
+  "name": "playforward",
+  "version": "1.0.0",
+  "description": "E-commerce de jogos (novos e usados) de jogadores para jogadores",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest",
+    "ngrok": "D:/Vinicius/Apps/ngrok.exe http 3030",
+    "win-dev": "cross-env NODE_ENV=win nodemon index.js",
+    "win-pro": "cross-env NODE_ENV=win-pro node index.js",
+    "ubuntu-dev": "NODE_ENV=ubuntu nodemon index.js",
+    "ubuntu-pro": "NODE_ENV=ubuntu-pro node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Noctho01/PlayForward.git"
+  },
+  "author": "Vinicius Dos Santos Rodrigues <vinicius.dev01@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Noctho01/PlayForward/issues"
+  },
+  "homepage": "https://github.com/Noctho01/PlayForward#readme",
+  "dependencies": {
+    "axios": "^0.25.0",
+    "cookie-parser": "^1.4.6",
+    "crypto": "^1.0.1",
+    "dotenv": "^10.0.0",
+    "ejs": "^3.1.6",
+    "express": "^4.17.2",
+    "jsonwebtoken": "^8.5.1",
+    "morgan": "^1.10.0",
+    "mysql": "^2.18.1",
+    "mysql2": "^2.3.3",
+    "path": "^0.12.7",
+    "sequelize": "^6.12.5",
+    "swagger-ui-express": "^4.3.0",
+    "validatorjs": "^3.22.1"
+  },
+  "devDependencies": {
+    "cross-env": "^7.0.3",
+    "jest": "^27.4.7",
+    "nodemon": "^2.0.15",
+    "sequelize-cli": "^6.3.0"
+  }
+}
