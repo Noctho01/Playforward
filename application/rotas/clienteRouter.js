@@ -16,7 +16,7 @@ router
 
 /* LOGIN AUTENTICAÇÃO */
 router
-	.post('/cliente/login', resolver(middleware.autenticacao), resolver(clienteController.login))	// autenticação e login (gera token JWT) do Cliente
-	.delete('/cliente/logout', middleware.autorizacao, resolver(clienteController.logout))			// logout do Cliente
+	.post('/login/cliente', resolver(middleware.autenticacao), resolver(clienteController.login))	// autenticação e login (gera token JWT) do Cliente
+	.delete('/logout/cliente', middleware.autorizacao, resolver(clienteController.logout))			// logout do Cliente
 
 module.exports = router

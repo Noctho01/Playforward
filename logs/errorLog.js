@@ -1,6 +1,4 @@
 module.exports = (error, req) => {
-    console.log(`
-Exception to ${req.ip}
-message: ${error.message}`
+    console.log(`/n Exception to ${req.ip}/n message: ${error.message}`
     )
 }

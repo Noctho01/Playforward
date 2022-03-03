@@ -16,7 +16,7 @@ router
 
 /* LOGIN AUTENTICAÇÃO */
 router
-	.post('/anunciante/login', resolver(middleware.autenticacao), resolver(anuncianteController.login))   // autenticação e login (gera token JWT) do Anunciante
-	.delete('/anunciante/logout', middleware.autorizacao, resolver(anuncianteController.logout))          // logout do Anunciante
+	.post('/login/anunciante', resolver(middleware.autenticacao), resolver(anuncianteController.login))   // autenticação e login (gera token JWT) do Anunciante
+	.delete('/logout/anunciante', middleware.autorizacao, resolver(anuncianteController.logout))          // logout do Anunciante
 
 module.exports = router
