@@ -1,8 +1,6 @@
 # dotenv
-infraestrutura/variaveis/.env.ubuntu
-infraestrutura/variaveis/.env.ubuntu.pro
-infraestrutura/variaveis/.env.win
-infraestrutura/variaveis/.env.win.pro
+infraestrutura/variaveis/.env.dev
+infraestrutura/variaveis/.env.pro
 
 # node_modules
 node_modules
@@ -11,15 +9,6 @@ node_modules
 Dockerfile
 .dockerignore
 
-# api pagamento
-api-pagamento-online/node_modules
-api-pagamento-online/.dockerignore
-api-pagamento-online/Dockerfile
-
 # diretorio de migrations
 repositoriosDatabase
 .sequelizerc
-
-# outros
-.slugignore
-Procfile

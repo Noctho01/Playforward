@@ -21,14 +21,5 @@ router
 	.put('/anunciante/pedido/:pedidoId', middleware.autorizacao, resolver(produtoController.setSolicitation))
 
 /* SERVIÇOS CLIENTE */
-router
-	.post('/cliente/carrinho/:produtoId', middleware.autorizacao, resolver(produtoController.addProdutoCarrinho))
-	.get('/cliente/carrinho', middleware.autorizacao, resolver(produtoController.getCarrinho))
-	.get('/cliente/carrinho/extrato', middleware.autorizacao, resolver(produtoController.previsionPaymentSlip))
-	.put('/cliente/carrinho/:produtoId', middleware.autorizacao, resolver(produtoController.updateProdutoCarrinho))
-	.delete('/cliente/carrinho/:produtoId', middleware.autorizacao, resolver(produtoController.deleteProdutoCarrinho))
-	.post('/cliente/carrinho/solicitar/:func', middleware.autorizacao, resolver(produtoController.buyProcessProdutos))
-	.get('/cliente/produtos', middleware.autorizacao, resolver(produtoController.getClienteProdutos))
-
 
 module.exports = router

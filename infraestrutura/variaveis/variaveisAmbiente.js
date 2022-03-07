@@ -2,15 +2,9 @@ const path = require('path')
 const dotenv = require('dotenv')
 
 dotenv.config({
-  path: process.env.NODE_ENV === 'win'
-    ? path.resolve(__dirname, '.env.win')
-    : process.env.NODE_ENV === 'win-pro'
-      ? path.resolve(__dirname, '.env.win.pro')
-      : process.env.NODE_ENV === 'ubuntu'
-        ? path.resolve(__dirname, '.env.ubuntu')
-        : process.env.NODE_ENV === 'ubuntu-pro'
-          ? path.resolve(__dirname, '.env.ubuntu.pro')
-          : null
+  path: process.env.NODE_ENV === 'dev'
+    ? path.resolve(__dirname, '.env.dev')
+    : path.resolve(__dirname, '.env.pro')
 })
 
 

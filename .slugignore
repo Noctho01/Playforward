@@ -1,0 +1,14 @@
+# api pagamento-online
+api-pagamento-online/
+
+# arquivos
+.dockerignore
+.editorconfig
+.gitignore
+.sequelizerc
+Dockerfile
+README.md
+
+# diretorios
+repositoriosDatabase/
+documentação/

@@ -9,8 +9,8 @@ const router = new Router()
 router
 	.post('/anunciante', middleware.validacao, resolver(anuncianteController.create))     // criar Anunciante
 	.get('/anunciante', middleware.autorizacao, resolver(anuncianteController.account))   // ver dados Anunciante
-	.get('/sistema/anunciante/:id', resolver(anuncianteController.getAnunciante))                 // ver dados Anunciante especifico
-	.get('/sistema/anunciantes', resolver(anuncianteController.listAnunciantes))                  // ver lista de Anunciantes
+	.get('/anunciantes/:id', resolver(anuncianteController.getAnunciante))                 // ver dados Anunciante especifico
+	.get('/anunciantes', resolver(anuncianteController.listAnunciantes))                  // ver lista de Anunciantes
 	.put('/anunciante', middleware.autorizacao, resolver(anuncianteController.update))    // atualizar dados do Anunciante
 	.delete('/anunciante',middleware.autorizacao, resolver(anuncianteController.delete))  // deletar Anunciante
 

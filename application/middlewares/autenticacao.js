@@ -29,5 +29,6 @@ module.exports = async (req, res, next) => {
 
 	delete body.senha
 	req.user = { id: id, email: email, type: type }
+	console.log(req.user)
 	return next()
 }

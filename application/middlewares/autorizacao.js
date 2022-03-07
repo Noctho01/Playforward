@@ -14,5 +14,6 @@ module.exports = (req, res, next) => {
 	if (tokenValido.payload.type != type) throw new TipoUsuario(type)
 
 	req.user = tokenValido.payload
+	console.log(req.user)
 	return next()
 }

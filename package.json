@@ -22,7 +22,6 @@
   },
   "homepage": "https://github.com/Noctho01/PlayForward#readme",
   "dependencies": {
-    "axios": "^0.25.0",
     "cookie-parser": "^1.4.6",
     "crypto": "^1.0.1",
     "dotenv": "^10.0.0",
@@ -34,11 +33,9 @@
     "mysql2": "^2.3.3",
     "path": "^0.12.7",
     "sequelize": "^6.12.5",
-    "swagger-ui-express": "^4.3.0",
     "validatorjs": "^3.22.1"
   },
   "devDependencies": {
-    "cross-env": "^7.0.3",
     "jest": "^27.4.7",
     "nodemon": "^2.0.15",
     "sequelize-cli": "^6.3.0"
