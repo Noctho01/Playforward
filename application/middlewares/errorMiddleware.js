@@ -2,7 +2,7 @@ const errorlog = require('../../logs/errorLog.js')
 
 module.exports = app => {
 	app.use((error, req, res, next) => {
-		//console.log(error)
+		console.log(error)
 		errorlog(error, req)
 		if (error.statusCode) {
 			return res

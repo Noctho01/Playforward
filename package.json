@@ -6,10 +6,8 @@
   "scripts": {
     "test": "jest",
     "ngrok": "D:/Vinicius/Apps/ngrok.exe http 3030",
-    "win-dev": "cross-env NODE_ENV=win nodemon index.js",
-    "win-pro": "cross-env NODE_ENV=win-pro node index.js",
-    "ubuntu-dev": "NODE_ENV=ubuntu nodemon index.js",
-    "ubuntu-pro": "NODE_ENV=ubuntu-pro node index.js"
+    "ubuntu-dev": "NODE_ENV=dev nodemon index.js",
+    "ubuntu-pro": "NODE_ENV=pro node index.js"
   },
   "repository": {
     "type": "git",

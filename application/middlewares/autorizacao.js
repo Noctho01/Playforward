@@ -6,13 +6,8 @@ const { ValidateTokenOAuth } = require('../services/oAuth')
 */
 
 module.exports = (req, res, next) => {
-	const path = req.path
-	const type = path.split('/')[1]
 	const token = req.cookies['Authorization']
-	const tokenValido = new ValidateTokenOAuth(token, type)
-
-	if (tokenValido.payload.type != type) throw new TipoUsuario(type)
-
+	const tokenValido = new ValidateTokenOAuth(token, 'Anunciante')
 	req.user = tokenValido.payload
 	console.log(req.user)
 	return next()

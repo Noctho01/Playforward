@@ -20,6 +20,5 @@ router
 	.get('/anunciante/pedidos', middleware.autorizacao, resolver(produtoController.getSolicitations))
 	.put('/anunciante/pedido/:pedidoId', middleware.autorizacao, resolver(produtoController.setSolicitation))
 
-/* SERVIÇOS CLIENTE */
 
 module.exports = router

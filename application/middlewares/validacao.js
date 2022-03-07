@@ -6,7 +6,6 @@ const { createHmac } = require('crypto')
 
 module.exports = (req, res, next) => {
 	let errors = {}
-	const path = req.path
 	const userData = req.body
 	const scheme = {
 		nome: ['required', 'string', 'min:5', 'max:50'],
@@ -22,14 +21,7 @@ module.exports = (req, res, next) => {
 		complemento: ['required', 'string'],
 	}
 
-	switch(path) {
-		case '/cliente':
-			scheme.dados_pagamento = 'string'
-			break
-		case '/anunciante':
-			scheme.carteira_virtual = 'string'
-			break
-	}
+	scheme.carteira_virtual = 'string'
 
 	Validator.useLang('pt')
 	const resultadoValidação = new Validator(userData, scheme)
